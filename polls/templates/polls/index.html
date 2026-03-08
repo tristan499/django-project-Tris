@@ -1,3 +1,8 @@
+{% load static %}
+<style>
+body { background-image: url("{% static 'polls/background.jpg' %}"); background-size: cover; }
+</style>
+
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
